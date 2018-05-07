@@ -1,17 +1,8 @@
 #!/bin/bash
 # uso: gitmotivao [modo] [nombre] [msj]
 
-if [ $1 eq 1 ]
-then
 git init
-fi
-
 git add *
 git commit -m "$3"
-
-if [ $1 eq 1 ]
-then
 git remote add origin https://github.com/rebisrebis/$2.git
-fi
-
 git push -u origin master
