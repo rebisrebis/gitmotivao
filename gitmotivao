@@ -1,8 +1,0 @@
-#!/bin/bash
-# uso: gitmotivao [modo] [nombre] [msj]
-
-git init
-git add *
-git commit -m "$3"
-git remote add origin https://github.com/rebisrebis/$2.git
-git push -u origin master
